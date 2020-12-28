@@ -779,6 +779,7 @@ module.exports = {
       "hover",
       "focus",
     ],
+
     backgroundImage: ["responsive"],
     backgroundOpacity: [
       "responsive",
@@ -819,6 +820,9 @@ module.exports = {
     divideOpacity: ["responsive"],
     divideStyle: ["responsive"],
     divideWidth: ["responsive"],
+    extend: {
+      translate: ["motion-reduce"],
+    },
     fill: ["responsive"],
     flex: ["responsive"],
     flexDirection: ["responsive"],
