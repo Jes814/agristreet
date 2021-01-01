@@ -27,7 +27,7 @@ function Slider() {
   ];
 
   return (
-    <Carousel>
+    <Carousel className="p-2">
       {items.map((item, i) => (
         <Item key={i} item={item} />
       ))}

@@ -27,7 +27,7 @@ function Farmers() {
   ];
 
   return (
-    <div className="pb-10">
+    <div className="p-2 pb-4 md:pb-10 lg:pb-10">
       <Carousel animation="slide">
         {items.map((item, i) => (
           <Item key={i} item={item} />
