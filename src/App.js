@@ -7,10 +7,12 @@ import SellCreatePage from "./pages/SellCreatePage";
 import LoginPage from "./pages/LoginPage";
 import ComparePage from "./pages/ComparePage";
 import FarmerDashboardPage from "./pages/FarmerDashboardPage";
+import SearchPage from "./pages/SearchPage";
 
 function App() {
   return (
     <Switch>
+      <Route path="/search" component={SearchPage} />
       <Route path="/farmer-dashboard" component={FarmerDashboardPage} />
       <Route path="/compare" component={ComparePage} />
       <Route path="/create-seller" component={SellCreatePage} />
