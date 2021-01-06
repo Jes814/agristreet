@@ -8,28 +8,38 @@ function NewArrival() {
   const datas = [
     {
       id: 1,
+      cat_title: "Studio Design",
       name: "item 1",
       image: `${veggie1}`,
+      price: "₱40.00",
     },
     {
       id: 2,
+      cat_title: "Studio Design",
       name: "item 2",
       image: `${veggie2}`,
+      price: "₱40.00",
     },
     {
       id: 3,
+      cat_title: "Studio Design",
       name: "item 3",
       image: `${veggie3}`,
+      price: "₱40.00",
     },
     {
       id: 4,
+      cat_title: "Studio Design",
       name: "item 4",
       image: `${veggie4}`,
+      price: "₱40.00",
     },
     {
       id: 5,
+      cat_title: "Studio Design",
       name: "item 5",
       image: `${veggie4}`,
+      price: "₱40.00",
     },
   ];
 
@@ -53,8 +63,14 @@ function NewArrival() {
                 src={data.image}
               />
             </div>
-            <div className="pt-4 text-xl font-semibold text-green-500">
+            <div className="pt-4 text-lg font-semibold text-gray-300">
+              {data.cat_title}
+            </div>
+            <div className="pt-4 text-2xl font-semibold text-green-500">
               {data.name}
+            </div>
+            <div className="pt-4 text-base font-semibold text-green-400">
+              {data.price}
             </div>
           </div>
         ))}

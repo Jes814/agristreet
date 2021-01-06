@@ -1,17 +1,20 @@
 import React from "react";
+import CartList from "./components/CartList";
+import ItemList from "./components/ItemList";
+import PriceFilter from "./components/PriceFilter";
 
 function Search() {
   return (
     <div className="py-10 mx-auto max-w-7xl">
-      <div className="flex border-2 border-yellow-400">
-        <div className="w-1/5 border-2 border-green-400">
-          <h2>Box Left</h2>
+      <div className="md:flex">
+        <div className="mx-4 border-2 border-green-400 rounded-lg shadow-md md:w-1/5 h-96">
+          <PriceFilter />
         </div>
-        <div className="w-3/5 border-2 border-blue-400">
-          <h2>Box Middle</h2>
+        <div className="shadow-md md:w-3/5">
+          <ItemList />
         </div>
-        <div className="w-1/5 border-2 border-red-400">
-          <h2>Box Right</h2>
+        <div className="mx-4 border-2 border-green-400 shadow-md md:w-1/5 h-96">
+          <CartList />
         </div>
       </div>
     </div>
