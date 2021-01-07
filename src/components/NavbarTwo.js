@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../resources/logo.png";
+import logo2 from "../resources/logo2.jpeg";
 
 function NavbarTwo() {
   return (
     <div className="md:mx-auto md:max-w-7xl">
       <div className="text-green-500 md:flex md:items-center md:justify-between md:py-3">
-        <div className="hidden md:w-1/4 md:block">
+        <div className="hidden md:py-10 md:w-1/4 md:block">
           <Link to="/">
-            <img src={`${logo}`} alt="home-logo" />
+            <img src={`${logo2}`} alt="home-logo" />
           </Link>
         </div>
         <div className="md:flex md:w-3/4">

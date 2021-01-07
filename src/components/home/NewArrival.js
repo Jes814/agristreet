@@ -72,6 +72,14 @@ function NewArrival() {
             <div className="pt-4 text-base font-semibold text-green-400">
               {data.price}
             </div>
+            <div className="pt-4 font-semibold">
+              <button className="w-full p-2 mb-2 font-semibold text-gray-100 bg-green-400 border-green-400 rounded-lg">
+                Add to Cart
+              </button>
+              <button className="w-full p-2 font-semibold text-green-400 bg-gray-300 border-gray-300 rounded-lg">
+                View Details
+              </button>
+            </div>
           </div>
         ))}
       </div>

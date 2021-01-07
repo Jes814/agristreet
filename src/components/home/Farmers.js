@@ -6,13 +6,13 @@ import farmer3 from "../../resources/farmer3.jpg";
 
 function Item(props) {
   return (
-    <div className="bg-white md:flex md:items-center md:justify-between">
+    <div className="bg-white md:flex md:justify-between">
       <div className="w-full md:w-2/5">
         <img src={props.item.image} alt="green-image" />
       </div>
-      <div className="w-full p-8 md:w-3/5">
+      <div className="w-full px-2 pt-6 md:w-3/5">
         <p className="text-base md:text-3xl">{props.item.description}</p>
-        <p className="py-10 text-xl italic text-gray-400 underline md:text-2xl">
+        <p className="text-xl italic text-gray-400 underline pt-14 md:text-2xl">
           {props.item.name}
         </p>
       </div>

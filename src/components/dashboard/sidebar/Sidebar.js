@@ -1,6 +1,6 @@
 import React from "react";
 import { ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
-import Logo from "../../../resources/logo.png";
+import Logo2 from "../../../resources/logo2.jpeg";
 import { Link } from "react-router-dom";
 
 function Sidebar({ open }) {
@@ -13,7 +13,7 @@ function Sidebar({ open }) {
       >
         <div className="lg:h-full lg:border-2 lg:border-green-400">
           <div>
-            <img src={Logo} alt="logo" />
+            <img src={Logo2} alt="logo" />
           </div>
 
           {/* Dashboard */}
@@ -84,7 +84,7 @@ function Sidebar({ open }) {
       <div className="lg:h-full lg:border-2 lg:border-green-400">
         <div className="hidden lg:block">
           <div>
-            <img src={Logo} alt="logo" />
+            <img className="w-full" src={Logo2} alt="logo" />
           </div>
 
           {/* Dashboard */}
