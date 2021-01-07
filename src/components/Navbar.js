@@ -44,25 +44,27 @@ function Navbar() {
             </button>
             <div className="hidden md:block">
               <div className="flex">
-                <div className="px-4">
-                  <Link to="/create-seller">Sell on Agristreet</Link>
-                </div>
+                <Link to="/create-seller">
+                  <div className="px-4 hover:text-yellow-400">
+                    Sell on Agristreet
+                  </div>
+                </Link>
                 |
-                <div className="px-4">
-                  <Link to="/compare">Compare</Link>
-                </div>
+                <Link to="/compare">
+                  <div className="px-4 hover:text-yellow-400">Compare</div>
+                </Link>
                 |
-                <div className="px-4">
-                  <Link to="/login">
+                <Link to="/login">
+                  <div className="px-4 hover:text-yellow-400">
                     <i className="px-2 fa fa-user"></i>Login
-                  </Link>
-                </div>
+                  </div>
+                </Link>
                 |
-                <div className="px-4">
-                  <Link to="/create-seller">
+                <Link to="/create-seller">
+                  <div className="px-4 hover:text-yellow-400">
                     <i className="px-2 fa fa-pencil-square-o"></i>Signup
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
