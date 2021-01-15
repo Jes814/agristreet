@@ -1,10 +1,15 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
+import EditProduct from "./components/products/EditProduct";
+import ProductList from "./components/products/ProductList";
 
-function ProductContent() {
+function ProductContent({ match }) {
+  console.log(match);
   return (
-    <>
-      <h1>Product Content</h1>
-    </>
+    <Switch>
+      <Route path={match.url + "/edit"} component={EditProduct} />
+      <Route path={match.url + "/"} component={ProductList} />
+    </Switch>
   );
 }
 
