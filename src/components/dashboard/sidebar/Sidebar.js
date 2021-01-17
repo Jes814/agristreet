@@ -135,16 +135,52 @@ function Sidebar({ open }) {
             </div>
           </Link>
 
-          {/* Notifications */}
-          <Link to="/farmer-dashboard/notifications">
+          {/* Messages */}
+          <Link to="/farmer-dashboard/messages">
             <div className="py-5 border-b-2 border-green-400">
               <ListItem>
                 <ListItemIcon>
-                  <i className="text-green-400 fa fa-bullhorn fa-2x"></i>
+                  <i className="text-green-400 fa fa-commenting-o fa-2x"></i>
+                </ListItemIcon>
+                <ListItemText className="text-green-400" primary="Messages" />
+              </ListItem>
+            </div>
+          </Link>
+
+          {/* Profile */}
+          <Link to="/farmer-dashboard/profile">
+            <div className="py-5 border-b-2 border-green-400">
+              <ListItem>
+                <ListItemIcon>
+                  <i className="text-green-400 fa fa-user fa-2x"></i>
+                </ListItemIcon>
+                <ListItemText className="text-green-400" primary="Profile" />
+              </ListItem>
+            </div>
+          </Link>
+
+          {/* Accounts */}
+          <Link to="/farmer-dashboard/account">
+            <div className="py-5 border-b-2 border-green-400">
+              <ListItem>
+                <ListItemIcon>
+                  <i className="text-green-400 fa fa-id-card-o fa-2x"></i>
+                </ListItemIcon>
+                <ListItemText className="text-green-400" primary="Account" />
+              </ListItem>
+            </div>
+          </Link>
+
+          {/* Maintenance */}
+          <Link to="/farmer-dashboard/maintenance">
+            <div className="py-5 border-b-2 border-green-400">
+              <ListItem>
+                <ListItemIcon>
+                  <i className="text-green-400 fa fa-cog fa-2x"></i>
                 </ListItemIcon>
                 <ListItemText
                   className="text-green-400"
-                  primary="Notifications"
+                  primary="Maintenance"
                 />
               </ListItem>
             </div>

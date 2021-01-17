@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import image from "../../../../../resources/bg_2.jpg";
 
-function EditProduct() {
+function EditInventory() {
   return (
     <div>
       <div className="flex justify-between m-20">
         {/* 1st Container */}
         <div className="w-1/2 p-4 bg-gray-100 border-2 border-green-500 rounded-lg">
-          <h1 className="text-2xl">Product Detail</h1>
+          <h1 className="text-2xl">Inventory Detail</h1>
 
           {/* Category */}
           <div className="flex items-center justify-between py-4">
@@ -45,38 +45,14 @@ function EditProduct() {
             </div>
           </div>
 
-          {/* Description */}
+          {/* Stocks */}
           <div className="flex items-center justify-between py-4">
-            <div className="w-1/2 text-xl">Description</div>
-            <div className="w-1/2">
-              <textarea
-                className="w-full p-2 border-2 border-green-400 rounded-lg focus:outline-none"
-                placeholder="Description...."
-              ></textarea>
-            </div>
-          </div>
-
-          {/* Price */}
-          <div className="flex items-center justify-between py-4">
-            <div className="w-1/2 text-xl">Price</div>
+            <div className="w-1/2 text-xl">Stocks</div>
             <div className="w-1/2">
               <input
                 className="w-full p-2 border-2 border-green-400 rounded-lg focus:outline-none"
-                placeholder="Product price...."
+                placeholder="Remaining stocks...."
               />
-            </div>
-          </div>
-
-          {/* Measurement */}
-          <div className="flex items-center justify-between py-4">
-            <div className="w-1/2 text-xl">Measurement</div>
-            <div className="w-1/2">
-              <select className="w-full p-2 border-2 border-green-400 rounded-lg focus:outline-none">
-                <option>Select 1</option>
-                <option>Select 2</option>
-                <option>Select 3</option>
-                <option>Select 4</option>
-              </select>
             </div>
           </div>
 
@@ -145,4 +121,4 @@ function EditProduct() {
   );
 }
 
-export default EditProduct;
+export default EditInventory;

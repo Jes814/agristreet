@@ -1,9 +1,13 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
+import OrderList from "./components/order/OrderList";
 
-function OrdersContent() {
+function OrdersContent({ match }) {
   return (
     <>
-      <h1>Orders Content</h1>
+      <Switch>
+        <Route path={match.url + "/"} component={OrderList} />
+      </Switch>
     </>
   );
 }

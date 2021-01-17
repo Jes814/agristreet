@@ -5,7 +5,6 @@ import EditProduct from "./components/products/EditProduct";
 import ProductList from "./components/products/ProductList";
 
 function ProductContent({ match }) {
-  console.log(match);
   return (
     <Switch>
       <Route path={match.url + "/edit"} component={EditProduct} />

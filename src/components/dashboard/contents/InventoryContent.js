@@ -1,9 +1,15 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
+import EditInventory from "./components/inventory/EditInventory";
+import InventoryList from "./components/inventory/InventoryList";
 
-function InventoryContent() {
+function InventoryContent({ match }) {
   return (
     <>
-      <h1>Inventory Content</h1>
+      <Switch>
+        <Route path={match.url + "/edit"} component={EditInventory} />
+        <Route path={match.url + "/"} component={InventoryList} />
+      </Switch>
     </>
   );
 }

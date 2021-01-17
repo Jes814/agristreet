@@ -12,7 +12,10 @@ import DashboardContent from "./contents/DashboardContent";
 import OrdersContent from "./contents/OrdersContent";
 import ProductContent from "./contents/ProductContent";
 import InventoryContent from "./contents/InventoryContent";
-import NotificationsContent from "./contents/NotificationsContent";
+import MessageContent from "./contents/MessageContent";
+import ProfileContent from "./contents/ProfileContent";
+import AccountContent from "./contents/AccountContent";
+import MaintenanceContent from "./contents/MaintenanceContent";
 
 function FarmerDashboard({ match }) {
   const [open, setOpen] = useState(false);
@@ -53,8 +56,20 @@ function FarmerDashboard({ match }) {
 
                 <Switch>
                   <Route
-                    path={match.url + "/notifications"}
-                    component={NotificationsContent}
+                    path={match.url + "/maintenance"}
+                    component={MaintenanceContent}
+                  />
+                  <Route
+                    path={match.url + "/account"}
+                    component={AccountContent}
+                  />
+                  <Route
+                    path={match.url + "/profile"}
+                    component={ProfileContent}
+                  />
+                  <Route
+                    path={match.url + "/messages"}
+                    component={MessageContent}
                   />
                   <Route
                     path={match.url + "/inventory"}
