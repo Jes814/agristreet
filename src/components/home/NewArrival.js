@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import veggie1 from "../../resources/veggie1.jpeg";
 import veggie2 from "../../resources/veggie2.jpeg";
 import veggie3 from "../../resources/veggie3.jpeg";
@@ -43,9 +44,6 @@ function NewArrival() {
     },
   ];
 
-  const onMouseOver = () => {
-    return;
-  };
   return (
     <div className="md:py-16 md:mx-auto md:max-w-7xl lg:py-16 lg:mx-auto lg:max-w-7xl">
       <div className="py-3 text-3xl font-semibold text-center text-green-500 md:text-left md:text-2xl">
@@ -61,6 +59,7 @@ function NewArrival() {
               <img
                 className="h-64 duration-500 ease-in transform hover:scale-105"
                 src={data.image}
+                alt="products"
               />
             </div>
             <div className="pt-4 text-lg font-semibold text-gray-300">
@@ -76,9 +75,11 @@ function NewArrival() {
               <button className="w-full p-2 mb-2 font-semibold text-gray-100 bg-green-400 border-green-400 rounded-lg">
                 Add to Cart
               </button>
-              <button className="w-full p-2 font-semibold text-green-400 bg-gray-300 border-gray-300 rounded-lg">
-                View Details
-              </button>
+              <Link to="/view-product">
+                <button className="w-full p-2 font-semibold text-green-400 bg-gray-300 border-gray-300 rounded-lg">
+                  View Details
+                </button>
+              </Link>
             </div>
           </div>
         ))}

@@ -8,10 +8,12 @@ import LoginPage from "./pages/LoginPage";
 import ComparePage from "./pages/ComparePage";
 import FarmerDashboardPage from "./pages/FarmerDashboardPage";
 import SearchPage from "./pages/SearchPage";
+import ViewProductDetails from "./components/home/component/ViewProductDetails";
 
 function App() {
   return (
     <Switch>
+      <Route path="/view-product" component={ViewProductDetails} />
       <Route path="/search" component={SearchPage} />
       <Route path="/farmer-dashboard" component={FarmerDashboardPage} />
       <Route path="/compare" component={ComparePage} />

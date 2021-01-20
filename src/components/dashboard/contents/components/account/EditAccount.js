@@ -47,7 +47,7 @@ function EditAccount() {
 
           {/* Buttons */}
           <div className="flex justify-end py-4">
-            <Link to="/farmer-dashboard/accounts">
+            <Link to="/farmer-dashboard/account">
               <div className="py-2 mx-4 duration-200 ease-in transform border-2 border-green-400 rounded-full cursor-pointer px-7 hover:border-red-400 hover:bg-red-400 hover:text-white">
                 <button className="font-semibold focus:outline-none">
                   Back
